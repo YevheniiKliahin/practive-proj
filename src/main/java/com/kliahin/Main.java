@@ -14,6 +14,6 @@ public class Main {
 
     @GetMapping("/")
     public String testReq(){
-        return "Testo!";
+        return "Testo Upd!";
     }
 }

@@ -13,7 +13,9 @@ public class Main {
     }
 
     @GetMapping("/")
-    public String testReq(){
-        return "Testo Upd!";
+    public GreetResponse testReq(){
+        return new GreetResponse("Testo record");
     }
+
+    record GreetResponse(String greet){}
 }
